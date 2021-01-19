@@ -258,7 +258,7 @@ if __name__ == '__main__':
             # Path to the MPIIFaceGaze dataset
             # Sub-folders names should consist of person IDs, for example:
             # p00, p01, p02, ...
-            'input-path': '/media/wookie/WookExt4/datasets/MPIIFaceGaze',
+            'input-path': '/.MPIIFaceGaze',
 
             # A supplementary HDF file with preprocessing data,
             # as provided by us. See grab_prerequisites.bash
@@ -267,19 +267,19 @@ if __name__ == '__main__':
             # Desired output path for the produced HDF
             'output-path': output_dir + '/MPIIGaze.h5',
         },
-        'GazeCapture': {
+       # 'GazeCapture': {
             # Path to the GazeCapture dataset
             # Sub-folders names should consist of person IDs, for example:
             # 00002, 00028, 00141, ...
-            'input-path': '/media/wookie/WookExt4/datasets/GazeCapture',
+       #     'input-path': '/media/wookie/WookExt4/datasets/GazeCapture',
 
             # A supplementary HDF file with preprocessing data,
             # as provided by us. See grab_prerequisites.bash
-            'supplementary': './GazeCapture_supplementary.h5',
+        #    'supplementary': './GazeCapture_supplementary.h5',
 
             # Desired output path for the produced HDF
-            'output-path': output_dir + '/GazeCapture.h5',
-        },
+         #   'output-path': output_dir + '/GazeCapture.h5',
+       # },
     }
     for dataset_name, dataset_spec in datasets.items():
         # Perform the data normalization
